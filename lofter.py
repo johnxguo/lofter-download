@@ -97,7 +97,7 @@ targetName = sys.argv[1]
 targetMain = "http://" + targetName + ".lofter.com"
 targetView = "http://" + targetName + ".lofter.com/view"
 targetPageList = "http://" + targetName + ".lofter.com/dwr/call/plaincall/ArchiveBean.getArchivePostByTime.dwr"
-albumPrefix = "http://ada86t.lofter.com/post/"
+albumPrefix = "http://" + targetName + ".lofter.com/post/"
 headers['Referer'] = targetView
 
 if not os.path.exists(targetName):
